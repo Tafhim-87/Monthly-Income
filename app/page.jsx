@@ -155,6 +155,7 @@ const MonthlyIncomeCalculator = () => {
                       value={income.name}
                       onChange={(e) => handleInputChange(income.id, 'name', e.target.value)}
                       placeholder="e.g., Salary, Freelance, Investment"
+                      className='text-black'
                       style={{
                         width: '100%',
                         padding: '0.5rem 0.75rem',
@@ -178,6 +179,7 @@ const MonthlyIncomeCalculator = () => {
                     </label>
                     <input
                       type="number"
+                      className='text-black'
                       value={income.amount}
                       onChange={(e) => handleInputChange(income.id, 'amount', e.target.value)}
                       placeholder="0.00"
